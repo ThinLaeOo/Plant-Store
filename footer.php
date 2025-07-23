@@ -96,12 +96,12 @@
                 
                 <!-- Quick Links Column -->
                 <div class="col-md-2 mb-4">
-                    <h5>About Us</h5>
+                    <h5>Store</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Programs</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Guarantee</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Reviews</a></li>
                     </ul>
                 </div>
 
@@ -112,6 +112,7 @@
                     <div class="contact-info">
                         <p><i class="fas fa-phone me-2"></i> (+95) 942-114-8225</p>
                         <p><i class="fas fa-map-marker-alt me-2"></i> 222 University Road<br>Kamayut, Yangon</p>
+                        <p><i class="fas fa-email me-2"></i> rainforestplantstore@gmail.com</p>
                     </div>
                 </div>
             </div>

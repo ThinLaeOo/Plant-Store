@@ -93,10 +93,15 @@ if(isset($_GET['priceRadio']))
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body{
+            background-image: url("plantStoreImages/WebsitePics/homebg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
     
 </head>
-
-
 <body class="bg-light">
     <div class="container-fluid">
         <div class="row">
@@ -107,7 +112,7 @@ if(isset($_GET['priceRadio']))
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2 py-5">
+            <div class="col-md-2 py-5"  style="background-color: #ffffff7a;">
                 <form action="viewitem.php" method="get" class="form border border-primary border-1 rounded">
                 <select name="cateChoose" class="form-select">
                     <option>Choose Category</option>
@@ -154,8 +159,8 @@ if(isset($_GET['priceRadio']))
 
             </div>
 
-            <div class="col-md-10 mx-auto py-5">
-                <div class="py-2"><a class="btn btn-primary mb-2" href="insertitem.php">Add New Item</a></div>
+            <div class="col-md-10 mx-auto py-5" style="background-color: #ffffff7a;">
+                <div class="py-2"><a class="btn btn-primary mb-2" href="insert.php">Add New Item</a></div>
                 <?php 
               if (isset($_SESSION['insertSuccess']))
               {

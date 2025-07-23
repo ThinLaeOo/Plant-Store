@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login</title>
+  <title>Signup</title>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
@@ -15,7 +15,9 @@
     }
 
     body {
-    background: url('/plantStoreImages/WebsitePics/homebg.jpg') no-repeat center center/cover;
+    background-image: url('/plantStoreImages/WebsitePics/homebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -34,6 +36,7 @@
     .left {
     flex: 1;
     color: white;
+    margin-top: 200px;
     }
 
     .left h1 {
@@ -63,45 +66,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
     }
 
-    .login-box {
+    .signup-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     color: white;
     }
 
-    .login-box h2 {
+    .signup-box h2 {
     text-align: center;
     margin-bottom: 15px;
     }
 
-    .login-box label {
+    .signup-box label {
     display: block;
     margin: 10px 0 5px;
     font-weight: 500;
     }
 
-    .login-box input {
+    .signup-box input {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 10px;
     outline: none;
     margin-bottom: 15px;
-    }
-
-    .forgot {
-    display: block;
-    text-align: right;
-    font-size: 13px;
-    margin-bottom: 15px;
-    color: #ddd;
-    text-decoration: none;
     }
 
     button {
@@ -160,38 +155,47 @@
     text-decoration: underline;
     }
 
+
   </style>
 </head>
 <body>
   <div class="container">
     <div class="left">
       <h1>Rain Foreset</h1>
-      <h2>Login</h2>
+      <h2>Sing Up</h2>
       <p>There is a moment in the life of any aspiring gardener that it is time to buy their first plant.</p>
       <p class="small">Embark on a journey where every corner of the world is within your reach.</p>
     </div>
 
     <div class="right">
-      <form class="login-box">
-        <h2>Login</h2>
+      <form class="signup-box">
+        <h2>Create Account</h2>
+
+        <label>Username</label>
+        <input type="text" placeholder="Enter your username" required>
 
         <label>Email</label>
         <input type="email" placeholder="Enter your email" required>
 
-        <label>Password</label>
-        <input type="password" placeholder="***********" required>
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
 
-        <a href="#" class="forgot">Forgot password?</a>
-        <button type="submit">SIGN IN</button>
+        <label>Address</label>
+        <input type="text" placeholder="Enter your address" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Create a password" required>
+
+        <button type="submit">SIGN UP</button>
 
         <div class="divider"><span>or</span></div>
 
         <button type="button" class="google-btn">
           <img src="https://img.icons8.com/color/16/000000/google-logo.png"/>
-          Sign in with Google
+          Sign up with Google
         </button>
 
-        <p class="new">Are you new? <a href="#">Create an Account</a></p>
+        <p class="new">Already have an account? <a href="#">Sign In</a></p>
       </form>
     </div>
   </div>

@@ -31,7 +31,7 @@
           <a class="nav-link disabled text-white" href="#">Login</a>
         </li>
       </ul>
-      <form class="d-flex ">
+      <form class="d-flex " style="margin-right: 50px;">
         <input class="form-control me-2" type="search" placeholder="Search">
         <button class="btn btn-outline-white text-white" type="submit">Search</button>
       </form>

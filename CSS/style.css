@@ -102,7 +102,7 @@ body {
 
 .left .forest {
     margin-left: 50px;
-    background: url('/plantStoreImages/homebg.jpg') no-repeat center center/cover;
+    background: url('/plantStoreImages/WebsitePics/homebg.jpg') no-repeat center center/cover;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: larger;
@@ -376,63 +376,162 @@ body {
     left: 0;
 }
 
-/*  home 4th section */
+/*  home 5th section */
 
 .category-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
 }
 
 .category-card {
-  position: relative;
-  width: 23.5%;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  transition: transform 0.3s;
+    position: relative;
+    width: 23.5%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
 .category-card:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .category-card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,0.25);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
 }
 
 .category-card h2 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .category-card button {
-  align-self: center;
-  margin-bottom: 20px;
-  padding: 10px 30px;
-  border: 1px solid white;
-  background-color: transparent;
-  color: white;
-  border-radius: 20px;
-  font-size: 16px;
-  transition: background 0.3s, color 0.3s;
+    align-self: center;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
 }
 
 .category-card button:hover {
-  background-color: white;
-  color: black;
+    background-color: white;
+    color: black;
 }
+
+.rareplnts {
+    height: 800px;
+    display: flex;
+    padding: 60px 40px;
+    gap: 40px;
+    align-items: center;
+    color: white;
+    background-color: #364e34;
+}
+
+.image-right img {
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+.babyplnts {
+    height: 800px;
+    display: flex;
+    padding: 60px 40px;
+    gap: 40px;
+    align-items: center;
+    color: white;
+    background-color: #364e34;
+}
+
+.content {
+    flex: 1;
+    max-width: 40%;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-family: 'Georgia', serif;
+}
+
+.content p {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.437);
+    border: 2px solid white;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn.small {
+    background-color: rgba(255, 255, 255, 0.437);
+    padding: 6px 16px;
+    font-size: 14px;
+}
+
+.product-card {
+    position: relative;
+    width: 300px;
+}
+
+.product-card img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.product-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.note img {
+    width: 200px;
+    margin-top: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-left img {
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+

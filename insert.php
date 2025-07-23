@@ -18,7 +18,7 @@ require_once "dbconn.php";
     // }
 
     if(isset($_POST["insertItem"])){
-        $pName = $_POST['ProductName'];
+        $pName = $_POST['pName'];
         $price = $_POST['price'];
         $quantity = $_POST['quantity'];
         $description = $_POST['description'];
@@ -29,14 +29,14 @@ require_once "dbconn.php";
 
         $status = move_uploaded_file($_FILES["img"]["tmp_name"],$filePath);
         if($status){
-            $sql = "insert into item values (?,?,?,?,?,?,?)";
+            $sql = "insert into products values (?,?,?,?,?,?,?)";
             $stmt = $conn->prepare($sql);
-            $status = $stmt->execute([null,$pName,$price,$description,$quantity,$filePath,$category]);
+            $status = $stmt->execute([null,$pName,$description,$price,$quantity,$filePath,$category]);
             $lastId = $conn->lastInsertId();
             if($status)
             {
                 //echo "item inserted successfully!🎉";
-                $_SESSION['insertSuccess']="Item with id $lastId inserted successfully🎉";
+                $_SESSION['insertSuccess']="Product with id $lastId inserted successfully🎉";
                 header("Location:viewItem.php");
             }
         }
@@ -59,10 +59,10 @@ require_once "dbconn.php";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
 </head>
-<body class="bg-light" style="background-image: url(/plantStoreImages/homebg.jpg); background-repeat: no-repeat; background-size: cover;">
+<body class="bg-light" style="background-image: url(/plantStoreImages/WebsitePics/homebg.jpg); background-repeat: no-repeat; background-size: cover;">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" style="margin-top: 30px;">
                 <?php require_once "navbar.php" ?>
             </div>
         </div>
@@ -70,13 +70,13 @@ require_once "dbconn.php";
 
             <div class="col-md-6 mx-auto">
 
-                <form class="form mt-3 pt-3" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER['PHP_SELF']?>">
+                <form class="form mt-3 pt-3" enctype="multipart/form-data" method="POST" action="<?php echo $_SERVER['PHP_SELF']?>">
                     <fieldset>
                         <legend>Insert Item</legend>
                     
                     <div class="mb-3">
-                        <label for="itemName" class="form-label">Item Name</label>
-                        <input type="text" class="form-control" name="itemName">
+                        <label for="pName" class="form-label">Plant Name</label>
+                        <input type="text" class="form-control" name="pName">
                     </div>
                     <div class="mb-3">
                         <label for="price" class="form-label">Price</label>
@@ -106,7 +106,7 @@ require_once "dbconn.php";
                         <input type="number" class="form-control" name="quantity">
                     </div>
                     <div class="mb-3">
-                        <label for="img" class="form-label">Choose item image</label>
+                        <label for="image" class="form-label">Choose item image</label>
                         <input type="file" class="form-control" name="img">
                     </div>
                     <button type="submit" class="btn btn-primary" name="insertItem">Insert Item</button>

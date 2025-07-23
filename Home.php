@@ -17,13 +17,11 @@
 <!-- 1st section -->
 
     <div class="fSlide">
-        <nav class="navbar">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php require_once "navbar.php" ?>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <?php require_once "navbar.php" ?>
             </div>
-        </nav>
+        </div>
 
         <div class="fscontent">
             <div class="left">
@@ -244,9 +242,43 @@
         });
     </script>
     </div>
+
+    <!-- RarePLNTS Section -->
+    <section class="rareplnts">
+    <div class="content">
+        <h1>RarePLNTS</h1>
+        <p>
+        Rare plants are the real gems from our online plant shop. This is the place
+        where you can find the most special plant species and special varieties from all over the world.
+        These plants are so special that there are often very few in stock. So be quick...
+        </p>
+        <button class="btn">Shop all Rare Plants</button>
+
+        <div class="note">
+        <img src="/plantStoreImages/WebsitePics/rareplt1.png" alt="Leaf" />
+        <p>
+            Variegation is extremely rare, as it is a difficult process to create genetic mutations!
+        </p>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="/plantStoreImages/WebsitePics/rareplt3.png" alt="Alocasia" />
+        <div class="product-info">
+        <h3>Alocasia</h3>
+        <p>Frydek Variegata</p>
+        <p>€22.95</p>
+        <button class="btn small">Shop now</button>
+        </div>
+    </div>
+
+    <div class="image-right">
+        <img src="/plantStoreImages/WebsitePics/rareplt2.png" alt="Hand Holding Plant" />
+    </div>
+    </section>
     
 
-    <!-- 4th section  -->
+    <!-- 5th section  -->
     <section class="category-section">
         <div class="category-card" style="background-image: url('images/houseplants.jpg');">
             <div class="overlay">
@@ -277,12 +309,45 @@
         </div>
     </section>
 
-        <nav class="footer">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php require_once "footer.php" ?>
-                </div>
+    <!-- BabyPLNTS Section -->
+    <section class="babyplnts">
+    <div class="image-left">
+        <img src="/plantStoreImages/WebsitePics/bbyplt1.png" alt="Hand Holding Plant" />
+    </div>
+
+    <div class="content">
+        <h1>BabyPLNTS</h1>
+        <p>
+        Is your room already full of plants, but would you like even more green in your home?
+        Then baby plants are ideal...
+        </p>
+        <button class="btn">Shop all BabyPLNTS</button>
+
+        <div class="note">
+        <img src="/plantStoreImages/WebsitePics/bbyplt2.png" alt="Constellation Leaf" />
+        <p>Named for its starry splashes that twinkle like tiny constellations.</p>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="/plantStoreImages/WebsitePics/bbyplt3.png" alt="Monstera" />
+        <div class="product-info">
+        <h3>Monstera</h3>
+        <p>Thai Constellation</p>
+        <p>€22.45</p>
+        <button class="btn small">Shop now</button>
+        </div>
+    </div>
+    </section>
+
+
+    <nav class="footer">
+        <div class="row">
+            <div class="col-md-12">
+                <?php require_once "footer.php" ?>
             </div>
-        </nav>
+        </div>
+    </nav>
+
 </body>
 </html>
